@@ -1,10 +1,13 @@
-const getTheYear = () =>{
-  const newDate = new Date();
-  return newDate.getFullYear();
 
-} 
-const Header =() =>(
-    <div> the date is {getTheYear()}</div>
-)
+
+const Header =() =>{
+    return(
+        <header >
+            <div className="logo"> Logo</div>
+            <input/>
+        </header>
+    )
+}
+   
    
 export default Header;
