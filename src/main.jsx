@@ -1,6 +1,7 @@
 import {createRoot} from "react-dom/client";
 import Header from "./components/header";
- const App  = () => (
+import './styles/styles.css' 
+const App  = () => (
     <>
     <Header/>
     </>
