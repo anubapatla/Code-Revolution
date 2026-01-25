@@ -1,10 +1,11 @@
-
-
 const Header =() =>{
+    const handleChange = () =>{
+        console.log('I was changed')
+    }
     return(
         <header >
             <div className="logo"> Logo</div>
-            <input/>
+            <input onChange={handleChange}/>
         </header>
     )
 }
