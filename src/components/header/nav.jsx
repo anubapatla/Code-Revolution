@@ -1,11 +1,18 @@
 const Nav =()=>{
+    const navItems =[
+        {id:"1",link:"/articles",title:'Articles'},
+        {id:"2",link:"/sports",title:'Sports'},
+        {id:"3",link:"/games",title:'Games'},
+        {id:"4",link:"/music",title:'Music'}
+    ]
     return(
     <nav className="mainNav">
                 <ul>
-                    <li className="navItem"><a href="#">articles</a></li>
-                    <li className="navItem"><a href="#">sports</a></li>
-                    <li className="navItem"><a href="#">games</a></li>
-                    <li className="navItem"><a href="#">music</a></li>
+                    {navItems.map(item=>(
+                        <li className="navItem" key={item.id}>
+                            <a href={item.link}>{item.title}</a>
+                        </li>
+                    ))}
                 </ul>
              
 
